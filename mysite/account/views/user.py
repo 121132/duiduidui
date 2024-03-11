@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from account import models
 
 from account.utils.pagination import Pagination
-from account.utils.form import UserModelForm, PrettyModelForm, PrettyEditModelForm
+from account.utils.form import UserModelForm
 
 
 def user_list(request):
