@@ -41,13 +41,14 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    "django.middleware.security.SecurityMiddleware",
-    "django.contrib.sessions.middleware.SessionMiddleware",
-    "django.middleware.common.CommonMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
-    "django.contrib.auth.middleware.AuthenticationMiddleware",
-    "django.contrib.messages.middleware.MessageMiddleware",
-    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'account.middleware.auth.AuthMiddleware',
 ]
 
 ROOT_URLCONF = "mysite.urls"
@@ -86,7 +87,7 @@ DATABASES = {
         'NAME': 'test',  # 数据库名字
         'USER': 'root',
         'PASSWORD': '12345678',
-        'HOST': '127.0.0.1',  # 那台机器安装了MySQL
+        'HOST': '127.0.0.1',  # 那台机器安装
         'PORT': 3306,
     }
 }
