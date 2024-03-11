@@ -2,10 +2,10 @@ from django.shortcuts import render, HttpResponse, redirect
 from django import forms
 from io import BytesIO
 
-from app01.utils.code import check_code
-from app01 import models
-from app01.utils.bootstrap import BootStrapForm
-from app01.utils.encrypt import md5
+from account.utils.code import check_code
+from account import models
+from account.utils.bootstrap import BootStrapForm
+from account.utils.encrypt import md5
 
 
 class LoginForm(BootStrapForm):

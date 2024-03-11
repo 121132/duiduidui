@@ -1,12 +1,12 @@
 from django.shortcuts import render, redirect
 
-from app01 import models
-from app01.utils.pagination import Pagination
+from account import models
+from account.utils.pagination import Pagination
 
 from django import forms
 from django.core.exceptions import ValidationError
-from app01.utils.bootstrap import BootStrapModelForm
-from app01.utils.encrypt import md5
+from account.utils.bootstrap import BootStrapModelForm
+from account.utils.encrypt import md5
 
 
 class AdminModelForm(BootStrapModelForm):

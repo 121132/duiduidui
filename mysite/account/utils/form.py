@@ -1,8 +1,8 @@
-from app01 import models
+from account import models
 from django.core.validators import RegexValidator
 from django.core.exceptions import ValidationError
 from django import forms
-from app01.utils.bootstrap import BootStrapModelForm
+from account.utils.bootstrap import BootStrapModelForm
 
 
 class UserModelForm(BootStrapModelForm):
